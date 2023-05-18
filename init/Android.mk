@@ -14,27 +14,15 @@
 # limitations under the License.
 #
 
-include device/samsung/sm6150-common/BoardConfigCommon.mk
+LOCAL_PATH := $(call my-dir)
 
-BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
+include $(CLEAR_VARS)
 
-DEVICE_PATH := device/samsung/a71
+LOCAL_MODULE_TAGS := optional
+LOCAL_C_INCLUDES := \
+    system/core/base/include \
+    system/core/init
+LOCAL_SRC_FILES := init_a71.cpp
+LOCAL_MODULE := libinit_a71
 
-# Assert
-TARGET_OTA_ASSERT_DEVICE := a71
-
-# Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
-
-# Board
-TARGET_BOARD_NAME := SRPSF18B003
-
-# Init
-TARGET_INIT_VENDOR_LIB := libinit_a71
-
-# Kernel
-BOARD_HEADER_VERSION := 2
-TARGET_KERNEL_CONFIG := a71_defconfig
-
-# Get non-open-source specific aspects
-include vendor/samsung/a71/BoardConfigVendor.mk
+include $(BUILD_STATIC_LIBRARY)
