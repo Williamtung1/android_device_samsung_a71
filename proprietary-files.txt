@@ -369,3 +369,6 @@ vendor/lib64/camera/com.samsung.tuned.lsi_gc5035_macro.bin
 vendor/lib64/camera/com.samsung.tuned.lsi_s5kgw1s.bin
 vendor/lib64/camera/com.samsung.tuned.sony_imx616.bin
 vendor/lib64/camera/com.samsung.tuned.sony_imx682.bin
+
+# Audio
+vendor/lib/hw/audio.primary.sm6150.so
