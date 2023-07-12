@@ -42,6 +42,8 @@ PRODUCT_PACKAGE_OVERLAYS += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.a71.rc \
+    fingerprint_common.rc \
+    init.fingerprint.rc \
 
 # Seccomp Policy
 PRODUCT_COPY_FILES += \
