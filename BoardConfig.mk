@@ -46,7 +46,7 @@ BOARD_MKBOOTIMG_ARGS := --dtb_offset $(BOARD_DTB_OFFSET) --header_version $(BOAR
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Security Patch Level
-VENDOR_SECURITY_PATCH := 2023-04-01
+VENDOR_SECURITY_PATCH := 2023-06-01
 
 # Get non-open-source specific aspects
 include vendor/samsung/a71/BoardConfigVendor.mk
