@@ -35,6 +35,7 @@ TARGET_SCREEN_WIDTH := 1080
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service-samsung.a71 \
+    SamsungUdfpsHandler.a71 \
 
 # Inherit Common Device Tree
 $(call inherit-product, device/samsung/sm6150-common/sm6150.mk)
